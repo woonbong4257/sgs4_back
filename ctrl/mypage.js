@@ -1,6 +1,7 @@
 const pool = require("../DB/db")
 
 exports.getMyPage = async(req, res)=>{
+  /* 값을 불러올때로 세션에 저장된 아이디와 타입을 불러와서 판단 */
   const user = req.session.user;
   const type = req.session.type;
 
